@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valorant</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            
+            color: white; 
+            position: relative; 
+            background-image: url('kosmos.webp'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar {
+            background-color: rgb(0, 0, 0); /* Biały pasek na górze */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar div:hover {
+            background-color: #f0f0f0;
+            color: #007BFF;
+        }
+        .navbar a {
+            text-decoration: none; /* Usunięcie podkreślenia */
+            cursor: pointer;
+            font-weight: bold;
+            color: white; 
+            padding: 8px 15px;
+            transition: background-color 0.3s, color 0.3s;
+            border: 2px solid red; 
+            background-origin: red;
+        }
+        .navbar a:hover {
+            background-color: red; 
+            color: white; 
+            border-color: red; /* Kolor obramowania również czerwony */
+        }
+        .images-container {
+            position: relative;
+            height: 500px; 
+        }
+        .image-left {
+            position: absolute;
+            top: 250px; /* Odległość od góry */
+            left: 100px; /* Odległość od lewej */
+            max-width: 40%; /* Rozmiar obrazu */
+            height: 300px;  /* Zachowanie proporcji */
+            border-radius: 50px;
+        }
+        .image-right {
+            position: absolute;
+            top: 250px; /* Odległość od góry */
+            right: 90px; /* Odległość od prawej */
+            max-width: 30%; /* Rozmiar obrazu */
+            height: 350px; 
+            border-radius: 50px;
+        }
+        .read-more {
+            position: absolute;
+            top: 580px; 
+            left: 100px; 
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid red;
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .read-more:hover {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://playvalorant.com/en-us/platform-selection/">Graj</a>
+        <a href="https://authenticate.riotgames.com/?client_id=prod-xsso-playvalorant&code_challenge=-cp3EHyohyos128122kFb1LLdm2O1s1HbHARketVkoE&locale=en_US&method=riot_identity&platform=web&redirect_uri=https%3A%2F%2Fauth.riotgames.com%2Fauthorize%3Fclient_id%3Dprod-xsso-playvalorant%26code_challenge%3D-cp3EHyohyos128122kFb1LLdm2O1s1HbHARketVkoE%26code_challenge_method%3DS256%26locale%3Den_US%26redirect_uri%3Dhttps%253A%252F%252Fxsso.playvalorant.com%252Fredirect%26response_type%3Dcode%26scope%3Dopenid%2520account%2520email%2520offline_access%26state%3D8aac69c1521d6fd9add2198683%26uri%3Dhttps%253A%252F%252Fplayvalorant.com%252Fen-us%252Fplatform-selection%252F&security_profile=low">Zaloguj się</a>
+        <a href="https://playvalorant.com/en-us/news/">News</a>
+    </div>
+    <div class="images-container">
+        <img src="image 1.png" alt="Obraz po lewej" class="image-left">
+        <a href="file:///C:/Users/DOMI/Desktop/kod/index.html" class="read-more">Czytaj więcej</a>
+        <img src="image 2.png" alt="Obraz po prawej" class="image-right">
+    </div>
+</body>
+</html>
